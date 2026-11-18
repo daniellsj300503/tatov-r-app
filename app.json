@@ -1,0 +1,47 @@
+{
+  "expo": {
+    "name": "Tatovør",
+    "slug": "tatovoer-app",
+    "version": "4.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "light",
+    "newArchEnabled": true,
+    "jsEngine": "hermes",
+    "splash": {
+      "resizeMode": "contain",
+      "backgroundColor": "#FAF8F5"
+    },
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "edgeToEdgeEnabled": true,
+      "adaptiveIcon": {
+        "backgroundColor": "#FAF8F5"
+      }
+    },
+    "plugins": [
+      [
+        "expo-camera",
+        {
+          "cameraPermission": "Tillad $(PRODUCT_NAME) at bruge kameraet, så du kan tage billeder til en anmodning eller din portfolio.",
+          "recordAudioAndroid": false
+        }
+      ],
+      [
+        "expo-location",
+        {
+          "locationWhenInUsePermission": "Tillad $(PRODUCT_NAME) at bruge din lokation til at vise tatoveringsstudier tæt på dig."
+        }
+      ],
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "Tillad $(PRODUCT_NAME) at bruge dine billeder, så du kan sende referencebilleder eller lægge billeder i din portfolio.",
+          "cameraPermission": "Tillad $(PRODUCT_NAME) at bruge kameraet, så du kan tage billeder til en anmodning eller din portfolio."
+        }
+      ],
+      "expo-status-bar"
+    ]
+  }
+}
